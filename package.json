@@ -1,0 +1,14 @@
+{
+  "name": "task2",
+  "version": "1.0.0",
+  "description": "sqe task2",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "ys",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.3.0"
+  }
+}
