@@ -14,11 +14,19 @@ class HeaderComponent extends BaseComponent {
     }
 
     get shoppingCart() {
-        return cy.get(`${this.rootEl} .cart-label`)
+        return cy.get(`${this.rootEl} .ico-cart .cart-label`)
     }
 
     get shoppingCartQty() {
         return cy.get(`${this.rootEl} span.cart-qty`)
+    }
+
+    get wishlist() {
+        return cy.get(`${this.rootEl} .ico-wishlist .cart-label`)
+    }
+
+    get wishlistQty() {
+        return cy.get(`${this.rootEl} span.wishlist-qty`)
     }
 
     get account() {

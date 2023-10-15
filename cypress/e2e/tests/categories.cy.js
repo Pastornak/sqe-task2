@@ -77,7 +77,9 @@ describe('Verify categories and sub-categories UI', () => {
     it('Verify that allows adding an item to the cart from SRP', () => {
       booksProductsPage.open()
       booksProductsPage.productsComponent.getAddtoCartBtn('Computing and Internet').click()
-      booksProductsPage.productsComponent.barNotification.should('have.attr', 'style', 'display: block;')
+      booksProductsPage.productsComponent.barNotification
+      .should('have.attr', 'style', 'display: block;')
+      .and('contain', 'shopping cart')
       booksProductsPage.headerComponent.shoppingCartQty.invoke('text').should('eq', '(1)')
     })
 

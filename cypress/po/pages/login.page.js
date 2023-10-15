@@ -1,10 +1,11 @@
 const BasePage = require("./base.page");
-const { ReturningCustomerComponent } = require("../components")
+const { ReturningCustomerComponent, CheckoutAsGuestComponent } = require("../components")
 
 class LoginPage extends BasePage {
     constructor() {
         super('/login')
         this.returningCustomerComponent = new ReturningCustomerComponent()
+        this.checkoutAsGuestComponent = new CheckoutAsGuestComponent()
     }
 }
 

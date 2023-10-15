@@ -21,6 +21,10 @@ class ProductsComponent extends BaseComponent {
         return cy.contains(name).parent().siblings('.add-info').find('.product-box-add-to-cart-button')
     }
 
+    getProduct(name) {
+        return cy.contains(name)
+    }
+
 }
 
 module.exports = ProductsComponent
